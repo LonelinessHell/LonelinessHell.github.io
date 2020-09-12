@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>newmain</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#main_div {
+	height: 1000px;
+	margin-left: 200px;
+	margin-top: 20px;
+	margin-right: 200px;
+}
+</style>
+<script>
+	function ToDefault()
+	{
+		document.getElementById("default").src="html/default.html";
+	}
+	function ToMiku()
+	{
+		document.getElementById("default").src="html/nakano_miku.html";
+	}
+	function ToBilibili()
+	{
+		document.getElementById("default").href="https://space.bilibili.com/11823017";
+	}
+</script>
+</head>
+
+<body>
+<div id="main_div">
+	<div id="main_title">地狱的落寞自己瞎写的个人主页     ver1.0</div>
+		<div id="left_list">
+  			<div id="left_list_title">目录</div>
+  			<div id="left_list_main"></div>
+  				<div id="left_list_tag1" onClick="ToBilibili()">我的b站(出错)</div>
+  				<div id="left_list_tag2">狗粮集中地 无</div>
+  				<div id="left_list_tag3" onClick="ToMiku()">Nakano Miku</div>
+  				<div id="left_list_tag4" onClick="ToDefault()">由头</div>
+		</div>
+		<div id="right_page">
+  			<iframe name="default" scrolling="auto" frameborder="0" id="default"></iframe>
+		</div>
+</div>
+</body>
+</html>
